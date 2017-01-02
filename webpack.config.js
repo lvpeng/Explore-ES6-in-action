@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
+const webpack = require('webpack');
 
 const config = {
   entry: {
@@ -11,9 +12,11 @@ const config = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin(), // enable HMR globally
   ],
   devServer: {
+    hot: true,
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 9000
