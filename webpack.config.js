@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
 
-
 const config = {
   entry: {
       arrowFn : path.resolve(__dirname, 'src/Arrow Function/app.js'),
@@ -14,11 +13,11 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin()
   ],
-  // devServer: {
-  //   contentBase: path.join(__dirname, "dist"),
-  //   compress: true,
-  //   port: 9000
-  // }
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 9000
+  }
 };
 
 module.exports = config;
