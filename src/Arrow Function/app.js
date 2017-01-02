@@ -1,7 +1,7 @@
 // Lexical this
 var bob = {
   _name: "Bob",
-  _friends: ['lvbin'],
+  _friends: ['EvanLyu'],
   printFriends() {
     this._friends.forEach(f =>
       console.log(this._name + " knows " + f))
