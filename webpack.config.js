@@ -20,7 +20,8 @@ const config = {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 9000
-  }
+  },
+  devtool: "cheap-source-map",
 };
 
 module.exports = config;
