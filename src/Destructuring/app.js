@@ -1,3 +1,7 @@
+/**
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+ */
+
 //The destructuring assignment syntax is a JavaScript expression that makes it possible to extract data from arrays or objects into distinct variables.
 
 const user = { name: 'Evan Lyu', age: 0}
@@ -5,7 +9,7 @@ const { name, age } =  user
 
 console.log(`My name is ${name} and I'm  ${age} old`)
 
-//Systax https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+//Systax
 
 // basic useage
 var a, b, rest;
@@ -145,7 +149,3 @@ for (var {name: n, family: { father: f }} of people) {
 // for (var u of people ){
 //   console.log(`name is ${u.name} and father is ${u.family.father}` )
 // }
-let key = "z";
-let { [key]: foo } = { z: "bar" };
-
-console.log(foo); // "bar

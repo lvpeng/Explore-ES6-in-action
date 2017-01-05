@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const config = {
   entry: {
       // arrowFn : path.resolve(__dirname, 'src/Arrow Function/app.js'),
-      destruct: path.resolve(__dirname, 'src/Destructuring/app.js')
+      destruct: path.resolve(__dirname, 'src/Destructuring/app2.js')
   },
   output: {
     filename: "[name].js",
