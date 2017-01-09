@@ -65,7 +65,8 @@ random2() // {} 可以省略
 
 //另外一个使用场景 :使用解构 接收正则表达式返回值
 var url = 'https://developer.mozilla.org/en-US/Web/JavaScript'
-var parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+var parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url)
+
 
 var [ ,protocol, fullhost, fullpath] = parsedURL;
 
