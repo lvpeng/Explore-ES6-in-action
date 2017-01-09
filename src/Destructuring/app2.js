@@ -63,8 +63,28 @@ function random2({min = 1, max = 100} = {}){
 random2() // {} 可以省略
 
 
-//使用解构 接收正则表达式返回值
+//另外一个使用场景 :使用解构 接收正则表达式返回值
 var url = 'https://developer.mozilla.org/en-US/Web/JavaScript'
 var parsedURL = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
 
 var [ ,protocol, fullhost, fullpath] = parsedURL;
+
+
+//另外一个使用场景 : 交换两个变量
+
+function removeBreakPoint({url, line, column}){
+  // ...
+}
+
+//我们通过一个简单的可变参数函数containsAll给大家演示不定参数的用法。
+//可以检查一个字符串中是否包含若干个子串，例如：containsAll("javascript", "java", "script")返回true。
+
+//不定参数
+function containsAll(word){
+  for(let argument of arguments) {
+    if(argument !== word) {
+      return false
+    }
+  }
+  return true
+}
