@@ -7,7 +7,8 @@ const config = {
       // arrowFn : path.resolve(__dirname, 'src/Arrow Function/app.js'),
       // destruct: path.resolve(__dirname, 'src/Destructuring/app2.js')
       // default : path.resolve(__dirname, 'src/DefaultParam/app.js')
-      spread: path.resolve(__dirname, 'src/Spread/app.js')
+      // spread: path.resolve(__dirname, 'src/Spread/app.js')
+      class: path.resolve(__dirname, 'src/Classes/app.js')
   },
   output: {
     filename: "[name].js",
