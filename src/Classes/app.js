@@ -35,3 +35,23 @@ const p1 =  Point(3,4)
 const p2 =  Point(6,8)
 
 Point.distance(p1,p2)
+
+c
+class Polygon {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+
+  get area() {
+    return this.calcArea();
+  }
+
+  calcArea() {
+    return this.height * this.width;
+  }
+}
+
+const square = new Polygon(10, 10);
+
+console.log(square.area);
